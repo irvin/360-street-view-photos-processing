@@ -38,9 +38,9 @@
 
 1. 截取特定使用者的 sequences 清單
     ```
-    source mapillary_env/bin/activate && ./mapillary_env/bin/python find_sequences_of_user.py -f regular irvinfly
+    source mapillary_env/bin/activate && python3 find_sequences_of_user.py irvinfly -f regular
     ```
 2. 批次下載該清單下的照片
     ```
-    source mapillary_env/bin/activate && ./mapillary_env/bin/python batch_downloader.py sequences_irvinfly.txt
+    source mapillary_env/bin/activate && python3 batch_downloader.py sequences_irvinfly.txt
     ```
