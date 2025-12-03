@@ -26,7 +26,7 @@
 7. 上傳 mapillary
     ```
     mapillary_tools process_and_upload geocoded \
-        --user_name "[your user name]" \
+        --user_name "irvinfly" \
         --organization_key "314354923595106"
     ```
 8. 上傳 Panoramax
@@ -36,7 +36,7 @@
 
 9. 從當前目錄下的所有 JPG 圖片中提取 GPS 資訊，並生成 output.gpx 檔案。
     ```
-    exiftool -p gpx.fmt -ee3 -api largefilesupport=1 *.jpg > output.gpx
+    exiftool -p "/Users/Irvin/Coding/360-street-view-photos-processing/gpx.fmt" -ee -d %Y-%m-%dT%H:%M:%SZ -fileOrder gpsdatetime geocoded/*.jpg > output.gpx
     ```
 
 ## 下載 Mapillary 圖片
