@@ -1,0 +1,6 @@
+[submodule "photos-de-dupe-scripts"]
+	path = photos-de-dupe-scripts
+	url = git@github.com:irvin/photos-de-dupe-scripts.git
+[submodule "mapillary_sequence_downloader"]
+	path = mapillary_sequence_downloader
+	url = git@github.com:irvin/mapillary_sequence_downloader_v5.git
