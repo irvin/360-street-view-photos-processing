@@ -8,6 +8,7 @@
     時間必須要是 GMT，如果用+8 mapillary 會錯
     ```
     geotag_with_gpx origin test.gpx geocoded
+    geotag_with_gpx origin test.gpx geocoded +09:00 //如果照片不在本地時區拍攝，就要加上時區參數
     ```
 3. 根據 GPS 座標去除重複照片
     ```
