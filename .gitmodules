@@ -4,3 +4,6 @@
 [submodule "mapillary_sequence_downloader"]
 	path = mapillary_sequence_downloader
 	url = git@github.com:irvin/mapillary_sequence_downloader_v5.git
+[submodule "mio-dashcam-mp4-to-jpg"]
+	path = mio-dashcam-mp4-to-jpg
+	url = git@github.com:irvin/mio-dashcam-mp4-to-jpg.git
