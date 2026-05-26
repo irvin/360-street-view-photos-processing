@@ -14,23 +14,27 @@
     ```
     checkimg-latlong-dup geocoded dupe
     ```
-4. 手動檢視並刪除重複的照片
-5. 計算並寫入方位角 interpolate
+4. 移除低於 1kph 以下的圖片移除（行車）
+    ```
+    checkimg-speed-dupe geocoded dupe 1
+    ```
+5. 手動檢視並刪除重複的照片
+6. 計算並寫入方位角 interpolate
     ```
     calcimg-dir geocoded 180
     ```
-6. 上傳 mapillary
+7. 上傳 mapillary
     ```
     mapillary_tools process_and_upload geocoded \
         --user_name "irvinfly" \
         --organization_key "314354923595106"
     ```
-7. 上傳 Panoramax
+8. 上傳 Panoramax
     ```
     panoramax_cli upload --api-url https://panoramax.liswu.me --split-distance 200 geocoded
     ```
 
-8. 從當前目錄下的所有 JPG 圖片中提取 GPS 資訊，並生成 output.gpx 檔案。
+9. 從當前目錄下的所有 JPG 圖片中提取 GPS 資訊，並生成 output.gpx 檔案。
     ```
     exiftool -p "/Users/Irvin/Coding/360-street-view-photos-processing/gpx.fmt" -ee -d %Y-%m-%dT%H:%M:%SZ -fileOrder gpsdatetime geocoded/*.jpg > output.gpx
     ```
