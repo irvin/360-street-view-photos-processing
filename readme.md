@@ -34,9 +34,9 @@
     panoramax_cli upload --api-url https://panoramax.liswu.me --split-distance 200 geocoded
     ```
 
-9. 從當前目錄下的所有 JPG 圖片中提取 GPS 資訊，並生成 output.gpx 檔案。
+9. 從 geocoded JPG 產生含 `<time>` 與分段 `<trkseg>` 的 GPX 軌跡。
     ```
-    exiftool -p "/Users/Irvin/Coding/360-street-view-photos-processing/gpx.fmt" -ee -d %Y-%m-%dT%H:%M:%SZ -fileOrder gpsdatetime geocoded/*.jpg > output.gpx
+    jpg-to-gpx geocoded output-segmented.gpx --force
     ```
 
 ## 下載 Mapillary 圖片
