@@ -31,7 +31,7 @@
     ```
 8. 上傳 Panoramax
     ```
-    panoramax_cli upload --api-url https://panoramax.liswu.me --split-distance 200 geocoded
+    panoramax_cli upload --api-url https://panoramax.osm.tw --split-distance 200 geocoded
     ```
 
 9. 從 geocoded JPG 產生含 `<time>` 與分段 `<trkseg>` 的 GPX 軌跡。
