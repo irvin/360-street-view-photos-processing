@@ -39,6 +39,15 @@
     jpg-to-gpx geocoded output-segmented.gpx --force
     ```
 
+    批次處理指定 root 第一層的每個資料夾，在各資料夾內產生同名 GPX：
+    ```
+    jpg-to-gpx --batch photos --force
+    ```
+
+    每份 GPX 會遞迴讀取該資料夾下所有 JPG，並依照片所在資料夾建立具名
+    `<trk>`；同一個 `<trk>` 內仍會依距離、時間差或缺少 GPS 拆成多個
+    `<trkseg>`。
+
 ## 下載 Mapillary 圖片
 
 1. 截取特定使用者的 sequences 清單
