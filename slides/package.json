@@ -1,0 +1,13 @@
+{
+  "name": "360-photos-processing-slides",
+  "private": true,
+  "version": "0.0.1",
+  "description": "360 Street View Photos Processing Slides",
+  "scripts": {
+    "build": "npx @marp-team/marp-cli coscup-2026.md --html --allow-local-files --no-stdin -o coscup-2026.html",
+    "build:pdf": "npx @marp-team/marp-cli coscup-2026.md --pdf --allow-local-files --no-stdin -o coscup-2026.pdf"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.4.0"
+  }
+}
