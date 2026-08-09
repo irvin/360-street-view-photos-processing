@@ -16,7 +16,7 @@
     ```
 4. 移除低於 1kph 以下的圖片移除（行車）
     ```
-    checkimg-speed-dupe geocoded dupe 1
+    checkimg-speed-dupe geocoded dupe 1 --until-stable
     ```
 5. 手動檢視並刪除重複的照片
 6. 計算並寫入方位角 interpolate
